@@ -1,11 +1,11 @@
 package cmdline 
 
 import (
-	. "github.com/julz/pat"
-	"github.com/julz/pat/benchmarker"
-	"github.com/julz/pat/config"
-	"github.com/julz/pat/experiment"
-	"github.com/julz/pat/laboratory"
+	. "github.com/simonleung8/pat"
+	"github.com/simonleung8/pat/benchmarker"
+	"github.com/simonleung8/pat/config"
+	"github.com/simonleung8/pat/experiment"
+	"github.com/simonleung8/pat/laboratory"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

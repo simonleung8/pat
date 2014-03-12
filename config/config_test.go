@@ -3,7 +3,7 @@ package config_test
 import (
 	"io/ioutil"
 
-	. "github.com/julz/pat/config"
+	. "github.com/simonleung8/pat/config"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

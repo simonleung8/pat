@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/julz/pat/cmdline"
-	"github.com/julz/pat/config"
-	"github.com/julz/pat/server"
+	"github.com/simonleung8/pat/cmdline"
+	"github.com/simonleung8/pat/config"
+	"github.com/simonleung8/pat/server"
 )
 
 func main() {

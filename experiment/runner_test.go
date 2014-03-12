@@ -3,7 +3,7 @@ package experiment
 import (
 	"errors"
 	"time"
-	. "github.com/julz/pat/benchmarker"
+	. "github.com/simonleung8/pat/benchmarker"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

@@ -2,7 +2,7 @@ package redis_test
 
 import (
 	"fmt"
-	. "github.com/julz/pat/redis"
+	. "github.com/simonleung8/pat/redis"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"time"

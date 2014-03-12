@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/julz/pat/config"
+	"github.com/simonleung8/pat/config"
 	"github.com/nu7hatch/gouuid"
 )
 

@@ -1,7 +1,7 @@
 package store
 
 import (
-	"github.com/julz/pat/experiment"
+	"github.com/simonleung8/pat/experiment"
 )
 
 type Multiplexer []func(<-chan *experiment.Sample)

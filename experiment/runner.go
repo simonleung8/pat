@@ -2,7 +2,7 @@ package experiment
 
 import (
 	"time"
-	. "github.com/julz/pat/benchmarker"
+	. "github.com/simonleung8/pat/benchmarker"
 )
 
 type SampleType int

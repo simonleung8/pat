@@ -1,8 +1,8 @@
 package laboratory
 
 import (
-	. "github.com/julz/pat/experiment"
-	"github.com/julz/pat/store"
+	. "github.com/simonleung8/pat/experiment"
+	"github.com/simonleung8/pat/store"
 	"github.com/nu7hatch/gouuid"
 )
 

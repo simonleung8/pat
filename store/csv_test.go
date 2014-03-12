@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/julz/pat/experiment"
+	"github.com/simonleung8/pat/experiment"
 	. "github.com/julz/pat/store"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

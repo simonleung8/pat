@@ -5,12 +5,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/julz/pat/benchmarker"
-	"github.com/julz/pat/config"
-	. "github.com/julz/pat/experiment"
-	"github.com/julz/pat/experiments"
-	. "github.com/julz/pat/laboratory"
-	"github.com/julz/pat/store"
+	"github.com/simonleung8/pat/benchmarker"
+	"github.com/simonleung8/pat/config"
+	. "github.com/simonleung8/pat/experiment"
+	"github.com/simonleung8/pat/experiments"
+	. "github.com/simonleung8/pat/laboratory"
+	"github.com/simonleung8/pat/store"
 )
 
 type Response struct {
