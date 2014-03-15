@@ -20,6 +20,11 @@ func random(min, max int) int {
 }
 
 func Dummy() error {
+	cmd = exec.Command("echo","$PATH")
+	err = cmd.Run()
+	var out bytes.Buffer
+	cmd.Stdout = &out
+	fmt.Printf("echo: %q\n", out.String())
 	time.Sleep(time.Duration(random(1, 5)) * time.Second)
 	return nil
 }
