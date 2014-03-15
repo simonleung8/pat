@@ -34,7 +34,7 @@ func DummyWithErrors() error {
 func Push() error {
 	exec.Command("export PATH=/tmp/cache/gcf")
 	out2, _ := exec.Command("ls -a /tmp/cache/gcf").Output()
-	fmt.Printf("/tmp/cache/gcf: $s", out2)
+	fmt.Printf("/tmp/cache/gcf: %s \n", out2)
 	out, _ := exec.Command("export").Output()
 	fmt.Printf("THe path is: %s", out)
 	err := Cf("login", "-u", "admin", "-p", "admin").ExpectOutput("OK")
