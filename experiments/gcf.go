@@ -33,7 +33,7 @@ func DummyWithErrors() error {
 
 func Push() error {
 	exec.Command("export PATH=/tmp/cache/gcf")
-	out2, _ := exec.Command("ls -a /tmp/cache/gcf")
+	out2, _ := exec.Command("ls -a /tmp/cache/gcf").Output()
 	fmt.Printf("/tmp/cache/gcf: $s", out2)
 	out, _ := exec.Command("export").Output()
 	fmt.Printf("THe path is: %s", out)
