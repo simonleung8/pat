@@ -32,7 +32,7 @@ func DummyWithErrors() error {
 }
 
 func Push() error {
-	out, errcmd := exec.Command("echo $PATH").Output()
+	out, _ := exec.Command("echo $PATH").Output()
 	fmt.Printf("THe path is: %s", out)
 	err := Cf("login", "-u", "admin", "-p", "admin").ExpectOutput("OK")
 	guid, _ := uuid.NewV4()
