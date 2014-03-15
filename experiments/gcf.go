@@ -37,9 +37,6 @@ func Push() error {
 	err := cmd.Run()
 	var out bytes.Buffer
 	cmd.Stdout = &out
-	if error != nil {
-		fmt.Printf("err: %q\n", out.String())
-	}
 	fmt.Printf("echo: %q\n", out.String())
 	guid, _ := uuid.NewV4()
 	_ = Cf("push", "pats-"+guid.String(), "patsapp", "-m", "64M", "-p", "assets/hello-world").ExpectOutput("App started")
