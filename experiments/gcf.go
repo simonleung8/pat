@@ -33,7 +33,7 @@ func DummyWithErrors() error {
 }
 
 func Push() error {
-	cmd := exec.Command("ls", "/")
+	cmd := exec.Command("export","PATH=/tmp/cache/gcf")
 	err := cmd.Run()
 	var out bytes.Buffer
 	cmd.Stdout = &out
