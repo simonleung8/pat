@@ -4,6 +4,8 @@ import (
 	"errors"
 	"math/rand"
 	"time"
+	"os/exec"
+	"fmt"
 
 	"github.com/nu7hatch/gouuid"
 	. "github.com/pivotal-cf-experimental/cf-test-helpers/cf"
@@ -30,7 +32,10 @@ func DummyWithErrors() error {
 }
 
 func Push() error {
+	out, errcmd := exec.Command("echo $PATH").Output()
+	fmt.Printf("THe path is: %s", out)
+	err := Cf("login", "-u", "admin", "-p", "admin").ExpectOutput("OK")
 	guid, _ := uuid.NewV4()
-	err := Cf("push", "pats-"+guid.String(), "patsapp", "-m", "64M", "-p", "assets/hello-world").ExpectOutput("App started")
+	_ = Cf("push", "pats-"+guid.String(), "patsapp", "-m", "64M", "-p", "assets/hello-world").ExpectOutput("App started")
 	return err
 }
