@@ -1,4 +1,4 @@
-package experiments
+pckage experiments
 
 import (
 	"bytes"
@@ -33,7 +33,7 @@ func DummyWithErrors() error {
 }
 
 func Push() error {
-	cmd := exec.Command("echo", "$PATH")
+	cmd := exec.Command("ls", "/")
 	err := cmd.Run()
 	var out bytes.Buffer
 	cmd.Stdout = &out
