@@ -35,6 +35,8 @@ func DummyWithErrors() error {
 func Push() error {
 	cmd := exec.Command("export","PATH=/tmp/cache/gcf")
 	err := cmd.Run()
+	cmd = exec.Command("echo","$PATH")
+	err = cmd.Run()
 	var out bytes.Buffer
 	cmd.Stdout = &out
 	fmt.Printf("echo: %q\n", out.String())
