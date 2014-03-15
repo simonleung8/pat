@@ -1,4 +1,4 @@
-pckage experiments
+package experiments
 
 import (
 	"bytes"
